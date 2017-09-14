@@ -210,9 +210,9 @@ app.controller('MainCtrl', function ($scope, $timeout, $interval, DataService, $
   }, 1000);
   // ================================= MQTT connection PART
 
-  $scope.mqttHostPorts = ["limero.ddns.net:1884", "test.mosquitto.org:8080", "broker.mqttdashboard.com:8000", "test.mosca.io:80", "broker.hivemq.com:8000", "iot.eclipse.org:80"];
-  $scope.mqttHostPort = "limero.ddns.net:1884";
-  $scope.mqtt = new MyMqtt("limero.ddns.net", 1884);
+  $scope.mqttHostPorts = ["limero.ddns.net:1884", "limero.ddns.net:1886", "test.mosquitto.org:8080", "broker.mqttdashboard.com:8000", "test.mosca.io:80", "broker.hivemq.com:8000", "iot.eclipse.org:80"];
+  $scope.mqttHostPort = "limero.ddns.net:1886";
+  $scope.mqtt = new MyMqtt("limero.ddns.net", 1886);
 
   eb.onLocal("mqtt/.*", function (ev) {
     //  $scope.safeApply();
